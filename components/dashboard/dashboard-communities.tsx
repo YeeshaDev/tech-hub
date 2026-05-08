@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button";
 import { Users } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
-// Replace with actual API call
 const communities = [
   {
     id: "1",
@@ -32,6 +31,7 @@ export default function DashboardCommunities() {
               />
             </div>
           </CardHeader>
+          
           <CardContent className="p-6">
             <div className="flex justify-between items-start mb-4">
               <div>
@@ -41,6 +41,7 @@ export default function DashboardCommunities() {
                   {community.members.toLocaleString()} members
                 </div>
               </div>
+              
               <Badge>{community.role}</Badge>
             </div>
             <p className="text-muted-foreground mb-4">
