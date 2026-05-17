@@ -14,7 +14,7 @@ const communities = [
     description: "A community for React developers to share knowledge and experiences.",
     imageUrl: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
   },
-  // Add more communities...
+ 
 ];
 
 export default function DashboardCommunities() {
@@ -43,10 +43,13 @@ export default function DashboardCommunities() {
               </div>
               
               <Badge>{community.role}</Badge>
+              
             </div>
+            
             <p className="text-muted-foreground mb-4">
               {community.description}
             </p>
+            
             <Button className="w-full">Manage Community</Button>
           </CardContent>
         </Card>
